@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family:"poppins400";
+    src: url(../font/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins500";
+    src: url(../font/Poppins-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "poppins600";
+    src: url(../font/Poppins-SemiBold.ttf);
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: rgb(195, 99, 204);
+  }
+
+  input{
+    padding: 20px 200px;
+    border-radius: 10px;
+    border-color: blue;
+    width:100%;
+   
+  }
+
+  label{
+
+    font-size: 18pt;
+    color:black;
+    font-family: 'poppins400';
+    
+  }
+
+  .Registration_form{
+    background-color: blueviolet;
+    max-width: 1000px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  h1{
+    font-family: 'poppins600';
+    color:black;
+    font-size: 40pt;
+    margin: auto;
+    padding: 20px;
+    
+  }
+
+  form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+  }
+
+  @media (max-width: 1024px){
+
+    h1{
+        font-size: 30pt;
+    }
+  }
+   
