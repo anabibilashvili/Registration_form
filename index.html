@@ -1,83 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resgistration</title>
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
     <section class="Registration_form">
-        <h1>REGISTRATION</h1>
-        <form class="reg" id="registration" action="#" method="get" novalidate>
-            <div class="input-field">
-                <label for="username">Enter User Name</label><br>
-                <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="user name"
-                    required
-                />
-                <span class="error-message" id="username-error"></span>
-            </div>
-            <div class="input-field">
-                <label for="email">Enter Email</label><br>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="email"
-                    required
-                />
-                <span class="error-message" id="email-error"></span>
-            </div>
-            <div class="input-field">
-                <label for="idNumber">Enter your ID number</label><br>
-                <input
-                    type="number"
-                    id="idNumber"
-                    name="IDNumber"
-                    placeholder="IDNumber"
-                    required
-                />
-                <span class="error-message" id="id-error"></span>
-            </div>
-            <div class="input-field">
-                <label for="mobile">Enter Mobile Number</label><br>
-                <input
-                    type="number"
-                    id="mobileNumber"
-                    name="mobileNumber"
-                    placeholder ="Mob Number"
-                    required
-                />
-                <span class="error-message" id="mobile-error"></span>
-            </div>
-            <div class="input-field">
-                <label for="job">Enter Job Description</label><br>
-                <input
-                    type="text"
-                    id="jobDesc"
-                    name="jobsDesc"
-                    placeholder="Job Description"
-                    required
-                />
-                <span class="error-message" id="mobile-error"></span>
-            </div>
-            
-            
-
-
-            
-
-        
-        </form>
-
+      <h1>REGISTRATION</h1>
+      <form class="reg" id="registration" action="#" method="get" novalidate>
+        <div class="input-field">
+          <label for="username">Enter User Name</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="user name"
+            required
+          />
+          <span class="error-message" id="username-error"></span>
+        </div>
+        <div class="input-field">
+          <label for="email">Enter Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            required
+          />
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="input-field">
+          <label for="idNumber">Enter your ID number</label><br />
+          <input
+            type="number"
+            id="idNumber"
+            name="idNumber"
+            placeholder="idNumber"
+            maxlength="11"
+            required
+          />
+          <span class="error-message" id="id-error"></span>
+        </div>
+        <div class="input-field">
+          <label for="phoneNumber">Enter Mobile Number</label><br />
+          <input
+            type="tel"
+            id="mobileNumber"
+            name="mobileNumber"
+            placeholder="Mob Number"
+            maxlength="9"
+            required
+          />
+          <span class="error-message" id="mobile-error"></span>
+        </div>
+        <div class="input-field">
+          <label for="job">Enter Job Description</label><br />
+          <input
+            type="text"
+            id="jobDesc"
+            name="jobsDesc"
+            placeholder="Job Description"
+            maxlength="50"
+            required
+          />
+          <span class="error-message" id="mobile-error"></span>
+        </div>
+        <div class="input-field">
+            <button type="submit">Submit</button>
+        </div>
+      </form>
+      
     </section>
+    <button class="open-sign-in">open sign in</button>
 
+		<div class="modal" id="sign-up-modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>sign-up-modal</h3>
+					<button class="modal-close">X</button>
+				</div>
+				<div class="modal-body">this is modal body</div>
+			</div>
+		</div>
 
+		<div class="modal" id="sign-in-modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3>sign-in-modal</h3>
+					<button class="modal-close">X</button>
+				</div>
+				<div class="modal-body">this is modal body</div>
+			</div>
+		</div>
     
-</body>
+  </body>
 </html>
