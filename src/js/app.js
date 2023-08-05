@@ -9,9 +9,10 @@ const mobNumber = document.querySelector("#mobileNumber");
 const mobNumberError = document.querySelector("#mobile-error");
 const inputs = document.querySelectorAll("input");
 const jobDesc = document.querySelector("#jobDesc");
-const jobDescError = document.querySelector("#jobDesc");
+const jobDescError = document.querySelector("#jobDescError");
 const password = document.querySelector("#password");
-const passwordError = document.querySelector("#password");
+const passwordError = document.querySelector("#password-error");
+const btn = document.querySelector(".open-sign-in");
 
 
 function modalAction(selector) {
@@ -56,8 +57,8 @@ function mobNumberValid() {
 		return false;
 	} else {
 		mobNumberError.innerText = "";
-		mobNumberError.classList.remove("error");
-		mobNumberError.add("correct");
+		mobNumber.classList.remove("error");
+		mobNumber.add("correct");
 		return true;
 	}
 }
@@ -96,6 +97,11 @@ function isPasswordValid() {
 username.addEventListener("input", isUserNameValid);
 email.addEventListener("input", isEmailValid);
 password.addEventListener("input", isPasswordValid);
+mobNumber.addEventListener("input", mobNumberValid);
+idNumber.dEventListener("input", idNumberValid);
+
+
+
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -104,10 +110,12 @@ form.addEventListener("submit", (e) => {
 	const isUNValid = isUserNameValid();
 	const isEValid = isEmailValid();
 	const isPValid = isPasswordValid();
+    const isMValid = mobNumberValid();
+    const isIdValid = idNumberValid();
 
 	// console.log(isUNValid, isEValid, isPValid);
 
-	if (isUNValid && isEValid && isPValid) {
+	if (isUNValid && isEValid && isPValid && isMValid && isIdValid ) {
 		// console.log("submit form");
 		// form.submit();
 		form.reset();
